@@ -1,0 +1,40 @@
+.arrow-label {
+  color: var(--main-white);
+  background-color: var(--main-text);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid var(--main-white);
+  border-radius: 50px;
+  padding: 2.75% 5%;
+  min-width: 34%;
+  box-sizing: border-box;
+}
+
+.arrow-label svg {
+  width: 8px;
+  height: 10px;
+  flex-shrink: 0;
+  margin-right: 10%;
+}
+
+.arrow-label--good {
+  background-color: var(--color-success);
+}
+
+.arrow-label--bad {
+  background-color: var(--color-error);
+}
+
+@media screen and (max-width: 589px) {
+  .arrow-label {
+    font-size: 2.5vw;
+  }
+
+  .arrow-label svg {
+    width: 1.36vw;
+    height: 1.69vw;
+  }
+}

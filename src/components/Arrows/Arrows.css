@@ -1,0 +1,39 @@
+.arrow {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background-color: var(--main-text);
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 50px;
+  background-color: var(--main-text);
+}
+
+.arrow--in::before {
+  left: -50px;
+}
+
+.arrow--in::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  bottom: 0;
+  left: -3px;
+  background: url("../../icons/arrow-head.svg");
+}
+
+@media screen and (max-width: 589px) {
+  .arrow::before {
+    width: 8.5vw;
+  }
+
+  .arrow--in::before {
+    left: -8.5vw;
+  }
+}

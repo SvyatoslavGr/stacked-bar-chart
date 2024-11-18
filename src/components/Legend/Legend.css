@@ -1,0 +1,52 @@
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-item-text {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.legend-item-color {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend-item-color--1 {
+  background-color: var(--metrics-1);
+}
+
+.legend-item-color--2 {
+  background-color: var(--metrics-2);
+}
+
+.legend-item-color--3 {
+  background-color: var(--metrics-3);
+}
+
+@media screen and (max-width: 589px) {
+  .legend {
+    gap: 7.6vw;
+  }
+
+  .legend-item-text {
+    font-size: 1.7vw;
+  }
+
+  .legend-item-color {
+    width: 2.7vw;
+    height: 2.7vw;
+  }
+}
