@@ -5,10 +5,11 @@
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10%;
+  min-height: 15px;
 }
 
 .slice {
-  min-height: 2px;
+  min-height: 5px;
   text-align: center;
   display: flex;
   justify-content: center;

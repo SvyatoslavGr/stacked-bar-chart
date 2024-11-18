@@ -62,7 +62,7 @@
   flex-direction: column;
 }
 
-.target-bar {
+.target-bar.bar {
   display: flex;
   justify-content: center;
   align-items: center;
